@@ -34,6 +34,7 @@ class wirbelsturm_common::config inherits wirbelsturm_common {
           autoupdate => false,
           restrict   => [
             '127.0.0.1',
+            '-6 ::1',
           ],
         }
       }
