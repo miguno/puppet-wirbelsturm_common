@@ -27,12 +27,15 @@ class wirbelsturm_common::config inherits wirbelsturm_common {
       default: {
         class { "::ntp":
           # 'iburst' speeds up the initial synchronization
-          servers    => [ '0.rhel.pool.ntp.org iburst',
-                          '1.rhel.pool.ntp.org iburst',
-                          '2.rhel.pool.ntp.org iburst',
-                        ],
-          autoupdate => false,
-          restrict   => [
+          servers         => [
+            '0.rhel.pool.ntp.org iburst',
+            '1.rhel.pool.ntp.org iburst',
+            '2.rhel.pool.ntp.org iburst',
+          ],
+          autoupdate      => false,
+          config_template => "${module_name}/ntp.conf.erb",
+          driftfile       => '/var/lib/ntp/drift',
+          restrict        => [
             # Permit time synchronization with our time source, but do not
             # permit the source to query or modify the service on this system.
             'default kod nomodify notrap nopeer noquery',

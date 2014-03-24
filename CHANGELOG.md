@@ -1,5 +1,10 @@
 # Change log
 
+## 1.0.2 (March 24, 2014)
+
+* Configure NTP closer to the default configurations in RHEL/CentOS 6 and Amazon Linux (if `$ntp_manage` is true).
+
+
 ## 1.0.1 (March 24, 2014)
 
 IMPROVEMENTS
