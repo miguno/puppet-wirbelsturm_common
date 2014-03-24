@@ -32,7 +32,9 @@ class wirbelsturm_common::config inherits wirbelsturm_common {
                           '2.rhel.pool.ntp.org iburst',
                         ],
           autoupdate => false,
-          restrict   => ['restrict 127.0.0.1'],
+          restrict   => [
+            '127.0.0.1',
+          ],
         }
       }
     }
