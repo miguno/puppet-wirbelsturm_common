@@ -33,6 +33,9 @@ class wirbelsturm_common::config inherits wirbelsturm_common {
                         ],
           autoupdate => false,
           restrict   => [
+          # Permit all access over the loopback interface.  This could
+          # be tightened as well, but to do so would effect some of
+          # the administrative functions.
             '127.0.0.1',
             '-6 ::1',
           ],
