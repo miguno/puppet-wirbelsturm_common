@@ -33,6 +33,10 @@ class wirbelsturm_common::config inherits wirbelsturm_common {
                         ],
           autoupdate => false,
           restrict   => [
+            # Permit time synchronization with our time source, but do not
+            # permit the source to query or modify the service on this system.
+            'default kod nomodify notrap nopeer noquery',
+            '-6 default kod nomodify notrap nopeer noquery',
           # Permit all access over the loopback interface.  This could
           # be tightened as well, but to do so would effect some of
           # the administrative functions.
