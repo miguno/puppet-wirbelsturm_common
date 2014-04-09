@@ -1,5 +1,5 @@
 name 'wirbelsturm-common'
-version '1.0.3'
+version '1.0.4'
 source 'https://github.com/miguno/puppet-wirbelsturm_common.git'
 author 'Michael G. Noll'
 license 'Apache License, Version 2.0'
