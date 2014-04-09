@@ -52,6 +52,8 @@ See section [Usage](#usage) below.
 
 * This module requires the following **additional Puppet modules**:
 
+    * [puppetlabs/ntp](https://github.com/puppetlabs/puppetlabs-ntp)
+    * [puppetlabs/stdlib](https://github.com/puppetlabs/puppetlabs-stdlib)
     * [puppet-sysctl](https://github.com/miguno/puppet-sysctl)
 
   It is recommended that you add these modules to your Puppet setup via
@@ -69,6 +71,15 @@ Puppet setup.
 Add the following lines to your `Puppetfile`:
 
 ```
+# Add the dependencies as hosted on public Puppet Forge.
+#
+# We intentionally do not include e.g. the stdlib dependency in our Modulefile to make it easier for users who decided
+# to use internal copies of stdlib so that their deployments are not coupled to the availability of PuppetForge.  While
+# there are tools such as puppet-library for hosting internal forges or for proxying to the public forge, not everyone
+# is actually using those tools.
+mod 'puppetlabs/ntp', '>= 3.0.3'
+mod 'puppetlabs/stdlib', '>= 4.1.0'
+
 # Add the puppet-wirbelsturm_common module
 mod 'wirbelsturm_common',
   :git => 'https://github.com/miguno/puppet-wirbelsturm_common.git'
