@@ -1,5 +1,10 @@
 # Change log
 
+## 1.0.5 (unreleased)
+
+* TBD
+
+
 ## 1.0.4 (July 02, 2014)
 
 * Rename module (in `Modulefile`) from "wirbelsturm-common" to "wirbelsturm-wirbelsturm_common" to be consistent across
