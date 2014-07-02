@@ -1,8 +1,9 @@
 # Change log
 
-## 1.0.4 (unreleased)
+## 1.0.4 (July 02, 2014)
 
-* TBD
+* Rename module (in `Modulefile`) from "wirbelsturm-common" to "wirbelsturm-wirbelsturm_common" to be consistent across
+  the various `puppet-wirbelsturm_*` Puppet modules of Wirbelsturm.
 
 
 ## 1.0.3 (April 09, 2014)

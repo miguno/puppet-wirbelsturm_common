@@ -1,4 +1,4 @@
-name 'wirbelsturm-common'
+name 'wirbelsturm-wirbelsturm_common'
 version '1.0.4'
 source 'https://github.com/miguno/puppet-wirbelsturm_common.git'
 author 'Michael G. Noll'
