@@ -1,5 +1,10 @@
 # Change log
 
+## 1.0.6 (unreleased)
+
+* TBD
+
+
 ## 1.0.5 (October 16, 2014)
 
 * Install `netcat` by default.
