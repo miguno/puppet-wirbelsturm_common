@@ -2,7 +2,7 @@
 
 ## 1.0.5 (unreleased)
 
-* TBD
+* Install `netcat` by default.
 
 
 ## 1.0.4 (July 02, 2014)

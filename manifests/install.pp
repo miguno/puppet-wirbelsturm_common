@@ -14,6 +14,11 @@ class wirbelsturm_common::install inherits wirbelsturm_common {
     alias  => java-jdk,
   }
 
+  package { 'netcat':
+    name   => $netcat_package_name,
+    ensure => $netcat_package_ensure,
+  }
+
   # Workaround for a known Amazon cloud-init bug (left-over scripts from original AMI image when running a derived,
   # custom image).  See https://forums.aws.amazon.com/message.jspa?messageID=449984 (May 2013).
   #
