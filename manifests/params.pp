@@ -4,6 +4,8 @@ class wirbelsturm_common::params {
   $ipv6_manage           = false
   $java_package_ensure   = 'latest'
   $java_package_name     = 'java-1.6.0-openjdk'
+  $jq_package_ensure     = 'latest'
+  $jq_package_name       = 'jq'
   $netcat_package_ensure = 'latest'
   $netcat_package_name   = 'nc'
   $ntp_manage            = false

@@ -14,6 +14,11 @@ class wirbelsturm_common::install inherits wirbelsturm_common {
     alias  => java-jdk,
   }
 
+  package { 'jq':
+    name   => $jq_package_name,
+    ensure => $jq_package_ensure,
+  }
+
   package { 'netcat':
     name   => $netcat_package_name,
     ensure => $netcat_package_ensure,

@@ -1,8 +1,8 @@
 # Change log
 
-## 1.0.6 (unreleased)
+## 1.0.6 (January 23, 2015)
 
-* TBD
+* Install `jq` by default.
 
 
 ## 1.0.5 (October 16, 2014)
